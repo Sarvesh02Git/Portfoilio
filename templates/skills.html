@@ -1,0 +1,75 @@
+<!-- portfolio/templates/skills.html -->
+{% extends "base.html" %}
+
+{% block title %}Skills - My Portfolio{% endblock %}
+
+{% block content %}
+<section id="skills" class="skills-section py-5">
+    <div class="container">
+        <h2 class="display-4 fw-bold text-center text-primary mb-5">My Skills</h2>
+
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto text-center">
+                <p class="lead">
+                    I possess a diverse set of skills in web development and a growing expertise in AI/Machine Learning.
+                    My proficiency spans across various programming languages, frameworks, and tools, enabling me to
+                    build robust, scalable, and visually appealing applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Frontend Skills -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card skills-card shadow-lg border-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4"><i class="fas fa-desktop text-primary me-2"></i>Programming Languages</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>HTML5 & CSS3(Basics)</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>DSA with C++</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Python</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>C & Java</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card skills-card shadow-lg border-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4"><i class="fas fa-server text-primary me-2"></i>Frontend & Backend</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>HTML and CSS3(Basics)</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Python - Flask Backend</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Python - FastApi Backend</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Database Management - SQLite and MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI/ML & Tools Skills -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card skills-card shadow-lg border-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4"><i class="fas fa-brain text-primary me-2"></i>AI/ML,Frameworks & Tools</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Machine Learning Basics</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Rag (Retrieval-Augmented Generation) Model</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Angular</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Git & GitHub, VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg">See My Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

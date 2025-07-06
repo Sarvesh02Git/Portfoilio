@@ -1,0 +1,1100 @@
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding-top: 100px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero h3 {
+  font-weight: 300;
+}
+
+.hero a {
+  color: white;
+}
+
+.hero i {
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.hero i:hover {
+  transform: scale(1.2);
+  color: #0dcaf0;
+}
+
+/* portfolio/static/css/style.css */
+
+/* Add this to your existing style.css */
+
+.about-section {
+    background-color: #1a1a2e; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    padding: 80px 0; /* More padding for separation */
+}
+
+.about-section .about-img {
+    border: 5px solid #e94560; /* Accent border around image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-section .about-img:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+/* Ensure text is readable against the dark background */
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Adjust button styles for the about section if needed */
+.about-section .btn-primary,
+.about-section .btn-outline-secondary {
+    border-radius: 50px; /* More rounded buttons */
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
+
+.about-section .btn-primary {
+    background-color: #e94560;
+    border-color: #e94560;
+}
+
+.about-section .btn-primary:hover {
+    background-color: #d1304d;
+    border-color: #d1304d;
+}
+
+.about-section .btn-outline-secondary {
+    color: #e94560;
+    border-color: #e94560;
+}
+
+.about-section .btn-outline-secondary:hover {
+    background-color: #e94560;
+    color: #fff;
+}
+
+/* Responsive adjustments for about section */
+@media (max-width: 768px) {
+    .about-section .about-img {
+        max-width: 250px; /* Smaller image on mobile */
+        margin-bottom: 30px;
+    }
+    .about-section h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .about-section p {
+        text-align: center;
+    }
+    .about-section .mt-4 { /* For buttons */
+        text-align: center;
+    }
+}
+
+
+/* portfolio/static/css/style.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto as per your base.html */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navbar (from your base.html with Bootstrap adjustments) */
+.navbar {
+    background-color: #212529 !important; /* bg-dark from Bootstrap */
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky; /* fixed-top in Bootstrap handles this */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #e94560 !important; /* Accent color for brand */
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f07487 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e94560; /* Underline accent */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after { /* Bootstrap active class */
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #e94560 !important;
+}
+
+/* Hero Section (Home Page) */
+.hero { /* Changed from .hero-section to .hero as per your home.html */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* From your home.html CSS */
+    color: white; /* From your home.html CSS */
+    padding-top: 100px; /* From your home.html CSS */
+}
+
+.hero h1 {
+    font-size: 3rem; /* From your home.html CSS */
+    font-weight: bold;
+}
+
+.hero h3 {
+    font-weight: 300;
+}
+
+.hero a {
+    color: white; /* From your home.html CSS */
+}
+
+.hero i {
+    color: white; /* From your home.html CSS */
+    transition: transform 0.2s ease;
+}
+
+.hero i:hover {
+    transform: scale(1.2);
+    color: #0dcaf0; /* From your home.html CSS (Bootstrap primary color) */
+}
+
+/* Buttons (from your home.html, adjusted for Bootstrap) */
+.btn-primary {
+    background-color: #e94560 !important;
+    border-color: #e94560 !important;
+}
+
+.btn-primary:hover {
+    background-color: #d1304d !important;
+    border-color: #d1304d !important;
+    transform: translateY(-3px); /* Added for subtle animation */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added for subtle animation */
+}
+
+.btn-outline-secondary { /* Adjusted to btn-outline-secondary for Bootstrap */
+    background-color: transparent !important;
+    color: #e94560 !important;
+    border-color: #e94560 !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e94560 !important;
+    color: #fff !important;
+    transform: translateY(-3px); /* Added for subtle animation */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added for subtle animation */
+}
+
+/* Footer */
+footer {
+    background-color: #212529; /* bg-dark from Bootstrap */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 50px;
+    box-shadow: 0 -2px 10px rgba(0)
+
+}
+
+/* portfolio/static/css/style.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto as per your base.html */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navbar (from your base.html with Bootstrap adjustments) */
+.navbar {
+    background-color: #212529 !important; /* bg-dark from Bootstrap */
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky; /* fixed-top in Bootstrap handles this */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #e94560 !important; /* Accent color for brand */
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f07487 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e94560; /* Underline accent */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after { /* Bootstrap active class */
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #e94560 !important;
+}
+
+/* Hero Section (Home Page) */
+.hero { /* Changed from .hero-section to .hero as per your home.html */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* From your home.html CSS */
+    color: white; /* From your home.html CSS */
+    padding-top: 100px; /* From your home.html CSS */
+}
+
+.hero h1 {
+    font-size: 3rem; /* From your home.html CSS */
+    font-weight: bold;
+}
+
+.hero h3 {
+    font-weight: 300;
+}
+
+.hero a {
+    color: white; /* From your home.html CSS */
+}
+
+.hero i {
+    color: white; /* From your home.html CSS */
+    transition: transform 0.2s ease;
+}
+
+.hero i:hover {
+    transform: scale(1.2);
+    color: #0dcaf0; /* From your home.html CSS (Bootstrap primary color) */
+}
+
+/* Buttons (from your home.html, adjusted for Bootstrap) */
+.btn-primary {
+    background-color: #e94560 !important;
+    border-color: #e94560 !important;
+}
+
+.btn-primary:hover {
+    background-color: #d1304d !important;
+    border-color: #d1304d !important;
+    transform: translateY(-3px); /* Added for subtle animation */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added for subtle animation */
+}
+
+.btn-outline-secondary { /* Adjusted to btn-outline-secondary for Bootstrap */
+    background-color: transparent !important;
+    color: #e94560 !important;
+    border-color: #e94560 !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e94560 !important;
+    color: #fff !important;
+    transform: translateY(-3px); /* Added for subtle animation */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added for subtle animation */
+}
+
+/* Footer */
+footer {
+    background-color: #212529; /* bg-dark from Bootstrap */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 50px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: #1a1a2e; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    padding: 80px 0; /* More padding for separation */
+}
+
+.about-section .about-img {
+    border: 5px solid #e94560; /* Accent border around image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-section .about-img:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+/* Ensure text is readable against the dark background */
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Adjust button styles for the about section if needed */
+.about-section .btn-primary,
+.about-section .btn-outline-secondary {
+    border-radius: 50px; /* More rounded buttons */
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    background-color: #1a1a2e; /* Same dark background */
+    color: #e0e0e0;
+    padding: 80px 0;
+}
+
+.skills-card {
+    background-color: #16213e; /* Slightly lighter dark for cards */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 280px; /* Ensure cards have similar height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.skills-card .card-title {
+    color: #e94560; /* Accent color for titles */
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.skills-card ul {
+    padding-left: 0;
+}
+
+.skills-card li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-card li i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Projects Section Styling */
+.projects-section {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    padding: 80px 0;
+}
+
+.project-card {
+    background-color: #16213e;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures image corners are rounded with card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Make cards fill height in a row */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-card .card-img-top {
+    width: 100%;
+    height: 200px; /* Fixed height for project images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.project-card .card-body {
+    padding: 20px;
+    flex-grow: 1; /* Allows card body to expand and fill space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-card .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    padding: 80px 0;
+}
+
+.contact-form-container {
+    background-color: #16213e;
+    border-radius: 15px;
+}
+
+.contact-form-container .form-label {
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.contact-form-container .form-control {
+    background-color: #212529; /* Darker input background */
+    border: 1px solid #343a40;
+    color: #e0e0e0;
+    border-radius: 8px;
+}
+
+.contact-form-container .form-control:focus {
+    background-color: #212529;
+    color: #e0e0e0;
+    border-color: #e94560; /* Accent border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(233, 69, 96, 0.25); /* Accent shadow on focus */
+}
+
+.contact-info-box {
+    background-color: #16213e;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensure boxes fill height in a row */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info-box h4 {
+    color: #e94560;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-info-box p {
+    margin-bottom: 0;
+}
+
+.contact-info-box a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.contact-info-box a:hover {
+    color: #e94560;
+}
+
+.social-icons a {
+    color: #e0e0e0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #e94560;
+}
+
+
+/* Responsive adjustments for skills and about sections */
+@media (max-width: 992px) {
+    .skills-card, .project-card, .contact-info-box { /* Apply to all cards/boxes */
+        min-height: auto; /* Allow height to adjust on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section .about-img {
+        max-width: 250px; /* Smaller image on mobile */
+        margin-bottom: 30px;
+    }
+    .about-section h2, .skills-section h2, .projects-section h2, .contact-section h2 { /* Added contact-section h2 */
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .about-section p, .projects-section p, .contact-section p.lead { /* Added contact-section p.lead */
+        text-align: center;
+    }
+    .about-section .mt-4 { /* For buttons */
+        text-align: center;
+    }
+    .skills-card .card-title, .project-card .card-title { /* Added project-card title */
+        font-size: 1.5rem;
+    }
+    .skills-card li, .project-card .card-text { /* Added project-card text */
+        font-size: 1rem;
+    }
+    .contact-form-container {
+        padding: 30px; /* Reduce padding on smaller screens */
+    }
+}
+
+
+/* portfolio/static/css/style.css */
+
+/* Define CSS Variables for Colors */
+:root {
+    /* Dark Theme Colors (Default) */
+    --primary-color: #e94560; /* Accent color */
+    --secondary-color: #0dcaf0; /* Bootstrap primary for social icons in hero */
+    --background-color: #1a1a2e;
+    --card-background-color: #16213e;
+    --text-color: #e0e0e0;
+    --light-text-color: #c0c0c0;
+    --navbar-background: #212529;
+    --footer-background: #212529;
+    --border-color: #343a40;
+    --input-background: #212529;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --hover-shadow-color: rgba(0, 0, 0, 0.4);
+    --button-hover-primary: #d1304d;
+    --button-hover-secondary-text: #fff;
+    --success-icon-color: #28a745; /* Bootstrap success green */
+    --link-color: #e0e0e0; /* Default link color */
+    --link-hover-color: #e94560; /* Default link hover color */
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] {
+    --primary-color: #007bff; /* A standard blue for light mode accent */
+    --secondary-color: #0056b3; /* Darker blue for social icons */
+    --background-color: #f8f9fa; /* Light background */
+    --card-background-color: #ffffff; /* White cards */
+    --text-color: #343a40; /* Dark text */
+    --light-text-color: #6c757d;
+    --navbar-background: #e9ecef; /* Light gray navbar */
+    --footer-background: #e9ecef;
+    --border-color: #ced4da;
+    --input-background: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow-color: rgba(0, 0, 0, 0.2);
+    --button-hover-primary: #0056b3;
+    --button-hover-secondary-text: #fff;
+    --success-icon-color: #28a745;
+    --link-color: #007bff; /* Light mode link color */
+    --link-hover-color: #0056b3; /* Light mode link hover color */
+}
+
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); /* Use variable */
+    color: var(--text-color); /* Use variable */
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme transition */
+}
+
+/* Ensure all text elements inherit the text color */
+h1, h2, h3, h4, h5, h6, p, li, label { /* Removed 'a' from here to handle links separately */
+    color: var(--text-color); /* Ensure all these elements adopt the theme text color */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* General Link Styling */
+a {
+    color: var(--link-color); /* Use variable for general links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color); /* Use variable for general link hover */
+}
+
+
+/* Override specific Bootstrap text colors if necessary */
+.text-primary {
+    color: var(--primary-color) !important; /* Ensure Bootstrap primary text changes */
+}
+
+.text-white-50 {
+    color: var(--light-text-color) !important; /* Ensure Bootstrap text-white-50 adapts */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navbar */
+.navbar {
+    background-color: var(--navbar-background) !important; /* Use variable */
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px var(--shadow-color); /* Use variable */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth theme transition */
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important; /* Use variable */
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--button-hover-primary) !important; /* Use variable */
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-color) !important; /* Use variable */
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color); /* Use variable */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important; /* Use variable */
+}
+
+/* Theme Toggle Button specific styling */
+#theme-toggle {
+    color: var(--text-color) !important; /* Use variable */
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section (Home Page) */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Gradient background - kept as fixed for a distinct hero look */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white; /* Explicitly set to white for visibility on dark gradient */
+    padding-top: 100px;
+    /* Removed color transition as it's fixed white */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white !important; /* Ensure h1 is white */
+}
+
+.hero h3 {
+    font-weight: 300;
+    color: white !important; /* Ensure h3 is white */
+}
+
+/* Ensure hero links and icons also adapt */
+.hero p.lead { /* Target the lead paragraph specifically */
+    color: white !important; /* Ensure lead paragraph is white */
+}
+
+
+.hero i {
+    color: white !important; /* Ensure social icons are white */
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.hero i:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color) !important; /* Secondary color for hover */
+}
+
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--button-hover-primary) !important;
+    border-color: var(--button-hover-primary) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.btn-outline-secondary {
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--button-hover-secondary-text) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-background);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 50px;
+    box-shadow: 0 -2px 10px var(--shadow-color);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 80px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-section .about-img {
+    border: 5px solid var(--primary-color);
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease;
+}
+
+.about-section .about-img:hover {
+    transform: scale(1.03);
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 80px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-card {
+    background-color: var(--card-background-color);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--hover-shadow-color);
+}
+
+.skills-card .card-title {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.skills-card ul {
+    padding-left: 0;
+}
+
+.skills-card li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-card li i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: var(--success-icon-color);
+}
+
+/* Projects Section Styling */
+.projects-section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 80px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card {
+    background-color: var(--card-background-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--hover-shadow-color);
+}
+
+.project-card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card .card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card .card-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-card .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 80px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form-container {
+    background-color: var(--card-background-color);
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container .form-label {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.contact-form-container .form-control {
+    background-color: var(--input-background);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-container .form-control:focus {
+    background-color: var(--input-background);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(233, 69, 96, 0.25);
+}
+
+.contact-info-box {
+    background-color: var(--card-background-color);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--hover-shadow-color);
+}
+
+.contact-info-box h4 {
+    color: var(--primary-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-info-box p {
+    margin-bottom: 0;
+}
+
+.contact-info-box a {
+    text-decoration: none;
+    color: var(--light-text-color); /* Use variable */
+    transition: color 0.3s ease;
+}
+
+.contact-info-box a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons a {
+    color: var(--text-color); /* Use variable */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .skills-card, .project-card, .contact-info-box {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section .about-img {
+        max-width: 250px;
+        margin-bottom: 30px;
+    }
+    .about-section h2, .skills-section h2, .projects-section h2, .contact-section h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .about-section p, .projects-section p, .contact-section p.lead {
+        text-align: center;
+    }
+    .about-section .mt-4 {
+        text-align: center;
+    }
+    .skills-card .card-title, .project-card .card-title {
+        font-size: 1.5rem;
+    }
+    .skills-card li, .project-card .card-text {
+        font-size: 1rem;
+    }
+    .contact-form-container {
+        padding: 30px;
+    }
+}

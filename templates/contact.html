@@ -1,0 +1,85 @@
+<!-- portfolio/templates/contact.html -->
+{% extends "base.html" %}
+
+{% block title %}Contact - My Portfolio{% endblock %}
+
+{% block content %}
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <h2 class="display-4 fw-bold text-center text-primary mb-5">Get In Touch</h2>
+
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="lead">
+                    Have a question, a project idea, or just want to say hello? Feel free to reach out!
+                    I'm always open to new opportunities and collaborations.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form-container p-4 p-md-5 shadow-lg rounded-3">
+                    <form action="#" method="POST"> <!-- Action can be updated later for form submission -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 text-center">
+            <div class="col-md-4 mb-4">
+                <div class="contact-info-box p-4 rounded-3 shadow-sm">
+                    <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                    <h4>Email</h4>
+                    <p><a href="mailto:sarvesh02poffice@gmail.com" class="text-white-50">sarvesh02poffice@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-info-box p-4 rounded-3 shadow-sm">
+                    <i class="fas fa-phone-alt fa-3x text-primary mb-3"></i>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+91 9755758402" class="text-white-50">+91 9755758402</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-info-box p-4 rounded-3 shadow-sm">
+                    <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                    <h4>Location</h4>
+                    <p class="text-white-50">Bhopal, Madhya Pradesh, India (462043)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 text-center">
+            <div class="col-12">
+                <h3 class="mb-4">Connect with me on social media!</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/Sarvesh02Git" target="_blank" class="me-4"><i class="fab fa-github fa-3x"></i></a>
+                    <a href="https://linkedin.com/in/sarveshparmar" target="_blank" class="me-4"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://www.instagram.com/_mr._veshyuu_" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

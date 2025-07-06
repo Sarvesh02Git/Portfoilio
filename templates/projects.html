@@ -1,0 +1,176 @@
+<!-- portfolio/templates/projects.html -->
+{% extends "base.html" %}
+
+{% block title %}Projects - My Portfolio{% endblock %}
+
+{% block content %}
+<section id="projects" class="projects-section py-5">
+    <div class="container">
+        <h2 class="display-4 fw-bold text-center text-primary mb-5">My Projects</h2>
+
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto text-center">
+                <p class="lead">
+                    Here are some of the projects I've worked on, showcasing my skills in Python, Web development, And AI
+                    Each project reflects my passion for creating functional and aesthetically pleasing applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Project Card 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='assets/portfolio.jpeg') }}" 
+                         class="card-img-top" 
+                         alt="Project 1"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/16213e/FFFFFF?text=Placeholder+Image';"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Portfolio Website</h5>
+                        <p class="card-text">
+                            A responsive personal portfolio website built with Flask, HTML, CSS (Bootstrap), and JavaScript.
+                            Features include a modern design, smooth navigation, and dedicated sections for skills and projects.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-eye me-1"></i> View Live
+                            </a> -->
+                            <!-- <a href="https://github.com/yourusername/your-portfolio-repo" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fab fa-github me-1"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='assets/Todo.jpeg') }}" 
+                         class="card-img-top" 
+                         alt="Project 2"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/16213e/FFFFFF?text=Placeholder+Image';"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">To-Do List by Flask</h5>
+                        <p class="card-text">
+                            To-Do list made up of python Flask backend framework and HTML and CSS for Frontend
+                            Including adding a To-Do work and Deleting and Updating it.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-eye me-1"></i> View Live
+                            </a> -->
+                            <!-- <a href="https://github.com/yourusername/e-commerce-api-repo" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fab fa-github me-1"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='assets/ragmodel.png') }}" 
+                         class="card-img-top" 
+                         alt="Project 3"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/16213e/FFFFFF?text=Placeholder+Image';"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">RAG Model</h5>
+                        <p class="card-text">
+                            RAG (Retrieval-Augmented Generation) Model, A AI chatbot which is made up of langchain and openai API key
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-eye me-1"></i> View Live
+                            </a> -->
+                            <!-- <a href="https://github.com/yourusername/image-classification-repo" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fab fa-github me-1"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+            <!-- Example Project Card 4 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='assets/2048game.jpg') }}" 
+                         class="card-img-top" 
+                         alt="Project 4"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/16213e/FFFFFF?text=Placeholder+Image';"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">2048 Game</h5>
+                        <p class="card-text">
+                            2048 Game by Python with random library and Tkinter Library. Random using for the game logic and Tkinter for the GUI interface
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-eye me-1"></i> View Live
+                            </a> -->
+                            <!-- <a href="https://github.com/yourusername/chat-app-repo" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fab fa-github me-1"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Project Card 5 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='assets/pythonproject.jpeg') }}" 
+                         class="card-img-top" 
+                         alt="Project 5"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/16213e/FFFFFF?text=Placeholder+Image';"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Screenshot By Python</h5>
+                        <p class="card-text">
+                            I developed a screenshot taker by python, also added it to my windows OS. if I click shift+crtl+9 it take screenshot of my screen.
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-eye me-1"></i> View Live
+                            </a> -->
+                            <!-- <a href="https://github.com/yourusername/data-dashboard-repo" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fab fa-github me-1"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Project Card 6 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="{{ url_for('static', filename='assets/pythonproject.jpeg') }}" 
+                         class="card-img-top" 
+                         alt="Project 6"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/16213e/FFFFFF?text=Placeholder+Image';"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">More Small Python projects</h5>
+                        <p class="card-text">
+                            Also made samll python projects like calender , emoji to text converter, Number Guesser, Rock paper scissor game.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-eye me-1"></i> View Live -->
+                            <!-- </a>
+                            <a href="https://github.com/yourusername/ai-chatbot-repo" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="fab fa-github me-1"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
